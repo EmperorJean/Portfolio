@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primaryColor: rgb(142, 142, 255);
+    --secondaryColor: rgb(0, 150, 137);
+}
+
+nav
+{
+    clear: both;
+    color: white;
+    display: flex;
+    padding: 1rem 2rem ;
+    background-color: var(--primaryColor);
+    align-items: center;
+    margin-right: 3rem;
+    justify-content: space-between;
+}
+
+nav button{
+    border: solid rgb(255, 255, 255) 2px;
+    color: white;
+    outline: none;
+    background: none;
+    font-size: 1.5rem;
+    padding: .5rem 2rem;
+    border-radius: 1rem;
+    font-weight: bold;
+}
+
+.sideBar
+{
+    color: white;
+    flex-direction: column;
+    display: flex;
+    position: fixed;
+    width: 5rem;
+    right: 0;
+    top: 0;
+    height: 100%;
+    background-color: rgb(142, 142, 255);
+    padding:1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.socialMedia
+{
+    flex-direction: column;
+    display: flex;
+}
+
+.socialMedia i{
+    padding: 1rem 0;
+}
+.sideBar .fa
+{
+    
+
+font-size: 3rem;
+}
+/* things that grow on hover */
+.sideBar .fa, nav button
+{
+    transition: transform .2s ease;
+    transform: scale(1);
+}
+
+.sideBar .fa:hover
+{
+    transition: transform .2s ease;
+    transform: scale(1.2);
+}
+
+.sideBar button{
+    background: none;
+    color: white;
+    width: inherit;
+    border: none;
+    outline: none;
+}
+nav button:hover
+{
+    transform: translate(-1rem, 0) scale(1.2);
+}
+
+.header
+{
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5rem;
+    text-align: center;
+}
+
+.header h1{
+    font-size: 5em;
+}
+
+.header2
+{
+    background-color: green;
+    height: 100vh;
+}
+
+.sideNav
+{
+    position: absolute;
+    top: 0;
+    right: -100vw;
+    opacity: 0;
+    font-size: 2rem;
+    width: fit-content;
+    background-color: var(--primaryColor);
+    transition: all ease .5s;
+}
+
+.sideNav ul
+{
+    list-style: none;
+    display: flex;
+}
+
+.sideNav ul li a{
+    display: block;
+    padding:1.2rem 1rem ;
+    text-align: right;
+    cursor: pointer;
+}
+.sideNav ul li a:hover{
+opacity: .5;
+}
+
+.menuShow
+{
+    opacity: 1;
+    right: 5rem;
+}
