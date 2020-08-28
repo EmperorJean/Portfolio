@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'lato', sans-serif;
 }
 
 :root{
@@ -59,8 +60,8 @@ nav button{
 }
 .sideBar .fa
 {
-    
 
+z-index: 100;
 font-size: 3rem;
 }
 /* things that grow on hover */
@@ -108,7 +109,7 @@ nav button:hover
 {
     position: absolute;
     top: 0;
-    right: -100vh;
+    right: -100vw;
     opacity: 1;
     font-size: 2rem;
     width: fit-content;
@@ -140,7 +141,40 @@ opacity: .5;
 
 .iconLink
 {
+    z-index: 100;
     color: white;
     outline: none;
     text-decoration: none;
+}
+
+/* mobile view  */
+@media (max-width: 1000px)
+{
+    .sideNav ul
+    {
+        
+        border-right: solid white 2px;
+        height: 100vh;
+        width: 100%;
+        display: block;
+    }
+
+    .sideNav ul li a
+    {
+        padding-left: 5rem;
+        width: 100vw;
+        font-size: 3rem;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .sideNav ul li a:hover
+    {
+        background-color: var(--primaryColor);
+    }
+
+    .header h1 
+    {
+        font-size: 3rem;
+    }
 }
