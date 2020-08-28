@@ -31,6 +31,7 @@ nav button{
     padding: .5rem 2rem;
     border-radius: 1rem;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .sideBar
@@ -60,7 +61,7 @@ nav button{
 }
 .sideBar .fa
 {
-
+cursor: pointer;
 z-index: 100;
 font-size: 3rem;
 }
@@ -89,10 +90,19 @@ nav button:hover
     transform: translate(-1rem, 0) scale(1.2);
 }
 
+nav button a 
+{
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    outline: none;
+    color: inherit;
+    font-size: inherit;
+}
 .header
 {
     background-color: white;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
