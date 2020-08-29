@@ -1,0 +1,116 @@
+:root{
+    --primaryColor: rgb(142, 142, 255);
+    --secondaryColor: rgb(0, 150, 137);
+}
+#project
+{
+    position: relative;
+}
+.projects
+{
+    
+    color: white;
+    position: relative;
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.project
+{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-bottom: 1rem;
+    background-color: rgba(142, 142, 255, 0.781);
+    width: 5rem;
+    overflow: hidden;
+    transition: all .8s;
+    border-right: white solid 2px;
+    display: flex;
+    z-index: 10;
+}
+
+.projectContent
+{
+    padding: 2rem;
+    background-color: rgb(142, 142, 255);
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 35rem;
+    opacity: 0;
+    transition: all .4s ease;
+
+}
+
+.projectAura:hover .project
+{
+    width: 94.1vw;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.projectAura:hover .projectTitle
+{
+    margin-top: auto;
+    margin-left: 2rem;
+    transform-origin: top left;
+    transform: rotateZ(-90deg);
+
+}
+
+.projectAura:hover .projectContent
+{
+    opacity: 1;
+}
+
+.projectAura
+{
+    height: auto;
+    width: 45vw;
+    background: transparent;
+}
+
+
+.projectImage img
+{
+    border-radius: 40px;
+    width: 30rem;
+}
+
+.projectName
+{
+    font-weight: bold;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projectTitle
+{ 
+    display: inline;
+    transition: all .6s ease; 
+    writing-mode: vertical-lr;
+}
+
+.projectDescription
+{
+    
+    color: white;
+    font-size: 1.5em;
+}
+
+.projectIcons
+{
+    font-size: 2em;
+}
+
+.projectIcons a{
+    text-decoration: none;
+    color: inherit;
+}
+.projectIcons a:hover{
+    opacity: .6;
+}
