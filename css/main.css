@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'lato', sans-serif;
+    scroll-behavior: smooth;
 }
 
 :root{
@@ -163,9 +164,92 @@ opacity: .5;
     text-decoration: none;
 }
 
+.headerAbout
+{
+    margin-right: 5rem;
+    margin-left: 5rem;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    outline: none;
+    color: white;
+}
+
+.headerAbout img
+{
+    border-radius: 50%;
+    width: 25rem;
+}
+
+.headerAbout h1 
+{
+    font-size: 5em;
+}
+
+.headerAbout p
+{
+    font-size: 2em;
+}
+
+.aboutText
+{
+    margin-left: 5rem;
+}
 /* mobile view  */
 @media (max-width: 1000px)
 {
+
+    .sideBar
+{
+    width: 3rem;
+}
+
+.sideBar .fa
+{
+    font-size: 2em;
+}
+.sideNav
+{
+    font-size: 12em;
+}
+.menuShow
+{
+    opacity: 1;
+    right: 3rem;
+}
+    .headerAbout
+    {
+        margin-left: 0;
+        margin-right: 3rem;
+        flex-direction: column;
+        text-align: center;
+    }
+    .headerAbout h1
+    {
+        font-size: 2.5em;
+    }
+
+    .headerAbout img
+    {
+        border:   solid black 2px;
+        width: 15em;
+    }
+
+    .headerAbout p
+    {
+        font-size: 1.5em;
+    }
+
+    .aboutText
+{
+    margin-left: 1rem;
+    margin-right: 1em;
+}
     .sideNav ul
     {
         
@@ -177,9 +261,9 @@ opacity: .5;
 
     .sideNav ul li a
     {
-        padding-left: 5rem;
+        padding-left: 3rem;
         width: 100vw;
-        font-size: 3rem;
+        font-size: 2rem;
         text-align: center;
         font-weight: bold;
     }
@@ -190,6 +274,33 @@ opacity: .5;
     }
 
     .header h1 
+    {
+        font-size: 3rem;
+    }
+
+    nav
+{
+    padding: .8rem 2rem ;
+    margin-right: 1rem;
+}
+
+nav button{
+    border: solid rgb(255, 255, 255) 2px;
+    color: white;
+    outline: none;
+    background: none;
+    font-size: 1.2rem;
+    padding: .3rem 1.4rem;
+    border-radius: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+}
+
+/* ipad / tablet views  */
+@media (max-width: 1200px)
+{
+    .header h1
     {
         font-size: 3rem;
     }

@@ -8,7 +8,7 @@
 }
 .projects
 {
-    
+    min-height: 100vh;
     color: white;
     position: relative;
     height: 100%;
@@ -35,7 +35,6 @@
 {
     padding: 2rem;
     background-color: rgb(142, 142, 255);
-    display: block;
     margin: auto;
     text-align: center;
     width: 35rem;
@@ -113,4 +112,110 @@
 }
 .projectIcons a:hover{
     opacity: .6;
+}
+
+#project1
+{
+    padding-right: 5rem;
+    text-align: center;
+    font-size: 5rem;
+    margin: auto;
+}
+
+/* ipad / tablet views */
+
+@media (max-width: 1100px)
+{
+.projects
+{
+    min-height: 100vh;
+    color: white;
+    position: relative;
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.project
+{
+    overflow: hidden;
+    padding: 1rem;
+    border-right: white solid 2px;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+}
+
+.projectContent
+{
+    padding: 2rem;
+    background-color: rgb(142, 142, 255);
+    display: none;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    opacity: 0;
+
+}
+
+.projectAura:hover .projectTitle
+{
+    margin-top: auto;
+    margin-left: 2rem;
+    transform-origin: top left;
+    transform: rotateZ(0deg);
+    writing-mode: horizontal-tb;
+
+}
+
+
+.projectImage img
+{
+    border-radius: 50px;
+    width: 25rem;
+}
+
+.projectName
+{
+    font-weight: bold;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projectTitle
+{ 
+    display: inline;
+    transition: all .6s ease; 
+}
+
+.projectDescription
+{
+    
+    color: white;
+    font-size: 1.2em;
+}
+
+.projectIcons
+{
+    font-size: 1.5em;
+}
+
+.projectIcons a{
+    text-decoration: none;
+    color: inherit;
+}
+.projectIcons a:hover{
+    opacity: .6;
+}
+
+#project1
+{
+    padding-right: 3rem;
+    text-align: center;
+    font-size: 3rem;
+    margin: auto;
+}
 }
